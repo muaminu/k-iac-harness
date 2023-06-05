@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- service.yml
+- deployment.yml
+commonLabels:
+  app: myapp
+images:
+- name: myapp
+  newName: gcr.io/us-gcp-ame-con-sjsxu-npd-1/python-flasks
+  newTag: 2c8bef8c2eab949328aedd8936804aa5fdb6415a
