@@ -18,12 +18,16 @@ pipeline:
           execution:
             steps:
               - step:
-                  identifier: echo
-                  name: echo
+                  type: BuildAndPushGCR
+                  name: BuildAndPushGCR_1
+                  identifier: BuildAndPushGCR_1
                   spec:
-                    command: echo hello world
-                  timeout: ""
-                  type: Run
+                    connectorRef: Gcloud
+                    host: gcr.io
+                    projectID: us-gcp-ame-con-sjsxu-npd-1
+                    imageName: Python_flasks_harness
+                    tags:
+                      - harness_build
           platform:
             arch: Amd64
             os: Linux
