@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_k_iac_harness_1685989878210-push-trigger-input-set
+  identifier: Build_k_iac_harness_1685989878210pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: cicdharness
+  pipeline:
+    identifier: Build_k_iac_harness_1685989878210
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>

@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_k_iac_harness_1685989878210-pr-trigger-input-set
+  identifier: Build_k_iac_harness_1685989878210prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: cicdharness
+  pipeline:
+    identifier: Build_k_iac_harness_1685989878210
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
