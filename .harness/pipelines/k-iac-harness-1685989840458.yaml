@@ -25,7 +25,7 @@ pipeline:
                     connectorRef: Gcloud
                     host: gcr.io
                     projectID: us-gcp-ame-con-sjsxu-npd-1
-                    imageName: Python_flasks_harness
+                    imageName: python_flasks_harness
                     tags:
                       - harnessbuild
           platform:
